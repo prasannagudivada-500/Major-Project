@@ -1,0 +1,74 @@
+HACKATHON TEST SUITE INITIALIZATION
+Start Time: 2026-03-27T05:55:11.607Z
+
+[2026-03-27T05:55:13.047Z]SCENARIO 1: UPCOMING HERO BIKES
+
+[2026-03-27T05:55:27.451Z] Found 9 Hero bikes with price < 4 Lac:
+
+1. Hero Karizma XMR 250
+   Price: Rs. 2.00 Lakh
+   Expected Launch: Expected Launch : Mar 2026
+   Data Price: ₹200000
+
+2. 2026 Hero Mavrick 440
+   Price: Rs. 2.30 Lakh
+   Expected Launch: Expected Launch : Apr 2026
+   Data Price: ₹230000
+
+3. Hero XPulse 421
+   Price: Rs. 2.40 Lakh
+   Expected Launch: Expected Launch : Feb 2027
+   Data Price: ₹240000
+
+4. Hero Splendor Electric
+   Price: Rs. 99,000
+   Expected Launch: Expected Launch : Jun 2027
+   Data Price: ₹99000
+
+5. Hero eMaestro
+   Price: Rs. 1.00 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹100000
+
+6. Hero Mavrick 440 Scrambler
+   Price: Rs. 2.20 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹220000
+
+7. Hero Xtreme 400S
+   Price: Rs. 2.50 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹250000
+
+8. Hero Hunk 440 SX
+   Price: Price To Be Announced
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹0
+
+9. Hero Xpulse 160
+   Price: Rs. 1.25 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹125000
+Screenshot saved: screenshots\2026-03-27\scenario1_hero_bikes_2026-03-27_05-55-27-483Z.png
+
+[2026-03-27T05:55:27.960Z] SCENARIO 2: USED CARS IN CHENNAI
+
+[2026-03-27T05:55:49.904Z] Found 8 popular used car models in Chennai:
+1. Maruti 800
+2. Maruti Swift
+3. Hyundai I10
+4. Hyundai Santro Xing
+5. Honda City
+6. Toyota Innova
+7. Toyota Fortuner
+8. Mahindra XUV500
+Screenshot saved: screenshots\2026-03-27\scenario2_chennai_used_cars_2026-03-27_05-55-49-904Z.png
+
+[2026-03-27T05:55:50.846Z]SCENARIO 3: GOOGLE LOGIN WITH INVALID CREDENTIALS
+Screenshot saved: screenshots\2026-03-27\scenario3_4_login_modal_2026-03-27_05-56-36-160Z.png
+Screenshot saved: screenshots\2026-03-27\scenario3_final_2026-03-27_05-56-36-519Z.png
+[2026-03-27T05:56:36.785Z] ✓ Scenario 1: Hero bikes < 4 Lac displayed and saved
+[2026-03-27T05:56:36.785Z] ✓ Scenario 2: Chennai used car models extracted and saved
+[2026-03-27T05:56:36.785Z] ✓ Scenario 3: Google login error messages captured
+HACKATHON TEST SUITE COMPLETED
+End Time: 2026-03-27T05:56:39.125Z

@@ -1,0 +1,58 @@
+{
+    "Upcoming bikes list": [
+        {
+            "name": "2026 Hero Mavrick 440",
+            "price": "Rs. 2.30 Lakh",
+            "launchDates": "Expected Launch : May 2026",
+            "dataprice": "230000"
+        },
+        {
+            "name": "Hero Karizma XMR 250",
+            "price": "Rs. 2.00 Lakh",
+            "launchDates": "Expected Launch : May 2026",
+            "dataprice": "200000"
+        },
+        {
+            "name": "Hero XPulse 421",
+            "price": "Rs. 2.40 Lakh",
+            "launchDates": "Expected Launch : Feb 2027",
+            "dataprice": "240000"
+        },
+        {
+            "name": "Hero Splendor Electric",
+            "price": "Rs. 99,000",
+            "launchDates": "Expected Launch : Jun 2027",
+            "dataprice": "99000"
+        },
+        {
+            "name": "Hero eMaestro",
+            "price": "Rs. 1.00 Lakh",
+            "launchDates": "Expected Launch : Unrevealed",
+            "dataprice": "100000"
+        },
+        {
+            "name": "Hero Mavrick 440 Scrambler",
+            "price": "Rs. 2.20 Lakh",
+            "launchDates": "Expected Launch : Unrevealed",
+            "dataprice": "220000"
+        },
+        {
+            "name": "Hero Xtreme 400S",
+            "price": "Rs. 2.50 Lakh",
+            "launchDates": "Expected Launch : Unrevealed",
+            "dataprice": "250000"
+        },
+        {
+            "name": "Hero Hunk 440 SX",
+            "price": "Price To Be Announced",
+            "launchDates": "Expected Launch : Unrevealed",
+            "dataprice": "0"
+        },
+        {
+            "name": "Hero Xpulse 160",
+            "price": "Rs. 1.25 Lakh",
+            "launchDates": "Expected Launch : Unrevealed",
+            "dataprice": "125000"
+        }
+    ]
+}
