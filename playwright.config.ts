@@ -49,7 +49,7 @@ export default defineConfig({
         os: process.platform
       }
     }],
-    ['./console-reporter.ts'],
+    //['./console-reporter.ts'],
     ['list']
   ],
 
@@ -70,7 +70,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',
+    trace: 'retain-on-failure',
 
     /* Video recording for all tests */
     video: 'on',
@@ -84,7 +84,7 @@ export default defineConfig({
     /* Maximum time for navigation actions */
     navigationTimeout: 60 * 1000,
 
-    headless: true,
+    headless: false,
 
     // launchOptions:{
 

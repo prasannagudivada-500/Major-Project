@@ -48,7 +48,7 @@ test.describe('Hackathon Project - Complete Test Suite', () => {
     console.log(`End Time: ${ScreenshotHelper.getTimestamp()}`);
   });
 
-  test('@Smoke @Regression Complete Hackathon - All Scenarios in Sequence', async ({ page }: { page: Page }) => {
+  test('@Smoke Complete Hackathon - All Scenarios in Sequence', async ({ page }: { page: Page }) => {
 
     // SCENARIO 1: Display Upcoming Hero Bikes (Price < 4 Lac)
 
