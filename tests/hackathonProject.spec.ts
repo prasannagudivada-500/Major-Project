@@ -104,7 +104,7 @@ test.describe('Hackathon Project - Complete Test Suite', () => {
 
       // Select Chennai city
       await usedCarsPage.selectCity('Chennai');
-      await expect(page.locator('//h1[@id="usedcarttlID"]')).toBeVisible();
+      await expect(usedCarsPage.usedCarsTitle).toBeVisible();
 
       // Scroll to popular models section
       await usedCarsPage.scrollDown();
