@@ -1,0 +1,57 @@
+HACKATHON TEST SUITE INITIALIZATION
+Start Time: 2026-04-07T05:18:59.084Z
+
+[2026-04-07T05:19:03.118Z]SCENARIO 1: UPCOMING HERO BIKES
+
+[2026-04-07T05:20:23.843Z] Found 9 Hero bikes with price < 4 Lac:
+
+1. 2026 Hero Mavrick 440
+   Price: Rs. 2.30 Lakh
+   Expected Launch: Expected Launch : May 2026
+   Data Price: ₹230000
+
+2. Hero Karizma XMR 250
+   Price: Rs. 2.00 Lakh
+   Expected Launch: Expected Launch : May 2026
+   Data Price: ₹200000
+
+3. Hero XPulse 421
+   Price: Rs. 2.40 Lakh
+   Expected Launch: Expected Launch : Feb 2027
+   Data Price: ₹240000
+
+4. Hero Splendor Electric
+   Price: Rs. 99,000
+   Expected Launch: Expected Launch : Jun 2027
+   Data Price: ₹99000
+
+5. Hero eMaestro
+   Price: Rs. 1.00 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹100000
+
+6. Hero Mavrick 440 Scrambler
+   Price: Rs. 2.20 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹220000
+
+7. Hero Xtreme 400S
+   Price: Rs. 2.50 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹250000
+
+8. Hero Hunk 440 SX
+   Price: Price To Be Announced
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹0
+
+9. Hero Xpulse 160
+   Price: Rs. 1.25 Lakh
+   Expected Launch: Expected Launch : Unrevealed
+   Data Price: ₹125000
+Screenshot saved: screenshots\2026-04-07\scenario1_hero_bikes_2026-04-07_05-20-23-874Z.png
+
+[2026-04-07T05:20:24.096Z] SCENARIO 2: USED CARS IN CHENNAI
+[2026-04-07T05:20:33.262Z] Test failed - Capturing failure screenshot
+HACKATHON TEST SUITE COMPLETED
+End Time: 2026-04-07T05:20:33.302Z
