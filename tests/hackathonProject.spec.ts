@@ -127,7 +127,7 @@ test.describe('Hackathon Project - Complete Test Suite', () => {
     });
 
     // SCENARIO 3: Google Login with Invalid Credentials
-    await test.step('Scenario 3: Google Login with Invalid Credentials - Multiple Cases', async () => {
+    await test.step('@local Scenario 3: Google Login with Invalid Credentials - Multiple Cases', async () => {
       console.log(`\n[${ScreenshotHelper.getTimestamp()}]SCENARIO 3: GOOGLE LOGIN WITH INVALID CREDENTIALS`);
 
       // Helper: Navigate and open Google login

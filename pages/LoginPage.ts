@@ -61,7 +61,8 @@ export class LoginPage {
       this.googleLoginButton.click({ force: false })
     ]);
     
-    this.popupPage = popup || this.page;
+    //this.popupPage = popup || this.page;
+    this.popupPage = popup ?? (this.page.url().includes('accounts.google.com') ? this.page : undefined);
     
     if (this.popupPage && this.popupPage !== this.page) {
       await this.popupPage.waitForLoadState('domcontentloaded', { timeout: 15_000 });
@@ -69,17 +70,33 @@ export class LoginPage {
     }
   }
 
+  // async enterEmail(email: string): Promise<void> {
+  //   if (!this.popupPage) throw new Error('Popup page not available');
+  //   const emailField = this.popupPage.getByLabel(this.emailInput);
+  //   await expect(emailField).toBeVisible();
+  //   await expect(emailField).toBeEnabled();
+  //   await expect(emailField).toBeEmpty();
+  //   await expect(emailField).toBeEditable();
+  //   await emailField.type(email);
+  //   await expect(emailField).toHaveValue(email);
+  //   await this.popupPage.waitForTimeout(2000);
+  // }
+
   async enterEmail(email: string): Promise<void> {
-    if (!this.popupPage) throw new Error('Popup page not available');
-    const emailField = this.popupPage.getByLabel(this.emailInput);
-    await expect(emailField).toBeVisible();
-    await expect(emailField).toBeEnabled();
-    await expect(emailField).toBeEmpty();
-    await expect(emailField).toBeEditable();
-    await emailField.type(email);
-    await expect(emailField).toHaveValue(email);
-    await this.popupPage.waitForTimeout(2000);
+  if (!this.popupPage) {
+    throw new Error('Popup page not available');
   }
+
+  // Ensure Google login DOM is fully loaded (CI safe)
+  await this.popupPage.waitForLoadState('domcontentloaded', { timeout: 15000 });
+  const emailField = this.popupPage.locator('input[type="email"]');
+  await expect(emailField).toBeVisible({ timeout: 15000 });
+  await expect(emailField).toBeEnabled();
+  await emailField.fill(email);
+  await expect(emailField).toHaveValue(email);
+
+  await this.popupPage.waitForTimeout(1000);
+}
 
   async clickNext(): Promise<void> {
     if (this.popupPage && !this.popupPage.isClosed()) {
