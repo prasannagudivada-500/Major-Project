@@ -154,6 +154,7 @@ The project fulfills all functional requirements and follows industry-standard a
 ------------------------------------------------------------------
 
 ## Author
+Leelanagasai Prasanna Gudivada
 
 Automation Stack: Playwright | TypeScript | Page Object Model
 
