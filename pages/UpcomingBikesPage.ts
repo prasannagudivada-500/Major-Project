@@ -11,13 +11,13 @@ interface Bike {
 }
 
 export class UpcomingBikesPage {
-   page: Page;
-   allUpcomingBikesLink: Locator;
-   modelNameLocator: Locator;
-   modelPriceLocator: Locator;
-   modelLaunchDateLocator: Locator;
-   dataprice: Locator;
-   scrollBikes: Locator;
+  page: Page;
+  allUpcomingBikesLink: Locator;
+  modelNameLocator: Locator;
+  modelPriceLocator: Locator;
+  modelLaunchDateLocator: Locator;
+  dataprice: Locator;
+  scrollBikes: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -36,19 +36,16 @@ export class UpcomingBikesPage {
 
   async selectBrand(brandName: string): Promise<void> {
     const brandLink = this.page.getByRole('link', { name: brandName, exact: true });
-    
+
     // Wait for brand link with explicit timeout and better error message
     await expect(brandLink).toBeVisible({ timeout: 15_000 });
-    
-    await brandLink.scrollIntoViewIfNeeded();
-    await this.page.waitForTimeout(2000);
+    await brandLink.waitFor({ state: 'visible', timeout: 15000 });
     await brandLink.click();
     await this.modelNameLocator.first().waitFor({ state: 'visible', timeout: 10_000 });
   }
 
   async getBikeDetails(): Promise<Bike[]> {
-    await this.scrollBikes.scrollIntoViewIfNeeded();
-    
+    await this.scrollBikes.waitFor({ state: 'visible', timeout: 15000 });
     const modelNameTitles = await this.modelNameLocator.allTextContents();
     const modelPrices = await this.modelPriceLocator.allTextContents();
     const modelLaunchDates = await this.modelLaunchDateLocator.allTextContents();
